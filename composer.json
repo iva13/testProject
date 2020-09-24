@@ -1,5 +1,11 @@
 {
     "require": {
-        "monolog/monolog": "1.0.*"
+        "monolog/monolog": "1.0.*",
+        "twbs/bootstrap": "^4.5"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "ln -sfr vendor/twbs/bootstrap/dist assets"
+        ]
     }
 }
